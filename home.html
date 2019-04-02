@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Everbright</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/websitelogo2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="bundle-home.css">
+
+  <script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+</head>
+<body class="mdc-typography">
+    <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBuE7asowAqSz4Tgfzfn-ymMZCqALl8XXc", 
+          authDomain: "fir-web-login-944b2.firebaseapp.com",
+          databaseURL: "https://fir-web-login-944b2.firebaseio.com",
+          projectId: "fir-web-login-944b2",
+          storageBucket: "fir-web-login-944b2.appspot.com",
+          messagingSenderId: "488295809809"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+    <aside class="mdc-drawer">
+      <div class="mdc-drawer__content">
+
+         
+
+        <nav class="mdc-list">
+          <a class="mdc-list-item mdc-list-item--activated" id="btndashboard" href="#">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+              <span class="mdc-list-item__text">Dashboard</span>
+            </a>
+
+          <a class="mdc-list-item" id="btnlisting" href="#">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">format_list_bulleted</i>
+              <span class="mdc-list-item__text">Listing</span>
+            </a>
+
+          <a class="mdc-list-item" id="btnlogout" href="#">
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">power_settings_new</i>
+            <span class="mdc-list-item__text">Logout</span>
+          </a>
+        </nav>
+
+        <nav class="mdc-list">
+        <div class="mdc-tab-bar" role="tablist">
+            <div class="mdc-tab-scroller mdc-tab-scroller--align-left">
+              <div class="mdc-tab-scroller__scroll-area">
+                <div class="mdc-tab-scroller__scroll-content">
+        <button id="dashboard-tab" class="mdc-tab mdc-tab--min-width mdc-tab--active mdc-shape-small-component-radius" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">Dash</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+          <button id="listing-tab" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__text-label">List</span>
+              </span>
+              <span class="mdc-tab-indicator">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+              <button id="logout-tab" type="button" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__text-label">Out</span>
+                  </span>
+                  <span class="mdc-tab-indicator">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+            </button>
+
+          </nav>
+          
+
+        </div>
+        </div>
+        </div>
+        </div>
+        
+
+
+     </div>  <!-- mdc-drawer__content -->
+    </aside>
+  
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a href="#" id="menuicon" class="demo-menu md-light material-icons mdc-top-app-bar__navigation-icon">menu</a>
+            <span class="mdc-top-app-bar__title">Everbright</span>
+          </section>
+        </div>
+      </header>
+  
+      <main class="main-content">
+        <div class="mdc-top-app-bar--fixed-adjust">
+
+            <section id="dashboard-content" class="tab-content">
+                <div class="mdc-card">
+                    <!-- ... content ... -->
+                <h2>
+                  &nbsp  Closed Sales for the Month              
+                </h2>
+                <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders" aria-orientation="vertical"> 
+                    <li class="mdc-list-item" tabindex="0">
+                        <img class="mdc-list-item__graphic" src="/assets/patty.jpeg" width="56" height="56" alt="Ms Patty">
+                      <span class="mdc-list-item__text">
+                        <span class="mdc-list-item__primary-text">Paseo Heights - 21B</span>
+                        <span class="mdc-list-item__secondary-text">Php 5,700,000 </span>
+                        <span id="meta-mobile" class="mdc-list-item__meta">March 04</span>
+                      </span>
+                      <span class="mdc-list-item__meta">March 04</span>
+
+                    </li>
+                  </ul>
+              </div>  
+
+              <div class="mdccard">
+              <div class="mdc-card">
+                  <!-- ... content ... -->
+              <h2>
+                &nbsp Closed Rentals for the Month              
+              </h2>
+              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders" aria-orientation="vertical"> 
+                  <li class="mdc-list-item " tabindex="0">
+                      <!-- <span class="mdc-list-item__graphic"></span>
+                      <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i> -->
+                      <img class="mdc-list-item__graphic" src="/assets/patty.jpeg" width="56" height="56" alt="Ms Patty">
+                    
+                    <span class="mdc-list-item__text ">
+                      <span class="mdc-list-item__primary-text">Greenbelt Hamilton - 21O</span>
+                      <span class="mdc-list-item__secondary-text">Php 40,000</span>
+                      <span id="meta-mobile" class="mdc-list-item__meta">March 04</span>
+                    </span>
+                      <span class="mdc-list-item__meta">March 04</span>
+                   
+                    <li class="mdc-list-item" tabindex="-1">
+                        <img class="mdc-list-item__graphic" src="/assets/sam.jpeg" width="56" height="56" alt="Sam">
+                        <span class="mdc-list-item__text">
+                          <span class="mdc-list-item__text mdc-list-item__primary-text">Tuscany - T4-21A</span>
+                          <span class="mdc-list-item__secondary-text">Php 35,0000</span>
+                          <span id="meta-mobile" class="mdc-list-item__meta">March 04</span>
+                        </span>
+                          <span class="mdc-list-item__meta">March 04</span>
+                      </li>
+
+                      <li class="mdc-list-item" tabindex="-1">
+                          <img class="mdc-list-item__graphic" src="/assets/sam.jpeg" width="56" height="56" alt="Sam">
+                          <span class="mdc-list-item__text">
+                            <span class="mdc-list-item__text mdc-list-item__primary-text">Stamford - T3 - 16D</span>
+                            <span class="mdc-list-item__secondary-text">Php 26,0000</span>
+                            <span id="meta-mobile" class="mdc-list-item__meta">March 12</span>
+                          </span>
+                            <span class="mdc-list-item__meta">March 12</span>
+                        </li>
+
+                        <li class="mdc-list-item" tabindex="-1">
+                            <img class="mdc-list-item__graphic" src="/assets/sam.jpeg" width="56" height="56" alt="Sam">
+                            <span class="mdc-list-item__text">
+                              <span class="mdc-list-item__text mdc-list-item__primary-text">Cityland Royal Mansion</span>
+                              <span class="mdc-list-item__secondary-text">Php 45,0000</span>
+                              <span id="meta-mobile" class="mdc-list-item__meta">March 15</span>
+                            </span>
+                              <span class="mdc-list-item__meta">March 15</span>
+                          </li>
+
+                          <li class="mdc-list-item" tabindex="-1">
+                              <img class="mdc-list-item__graphic" src="/assets/aj.jpeg" width="56" height="56" alt="Aj">
+                              <span class="mdc-list-item__text">
+                                <span class="mdc-list-item__text mdc-list-item__primary-text">Mckinley Garden Villas Cluster 2C</span>
+                                <span class="mdc-list-item__secondary-text">Php 85,0000</span>
+                                <span id="meta-mobile" class="mdc-list-item__meta">March 18</span>
+                              </span>
+                                <span class="mdc-list-item__meta">March 18</span>
+                            </li>
+
+                            <li class="mdc-list-item" tabindex="-1">
+                                <img class="mdc-list-item__graphic" src="/assets/sam.jpeg" width="56" height="56" alt="Sam">
+                                <span class="mdc-list-item__text">
+                                  <span class="mdc-list-item__text mdc-list-item__primary-text">Greenbelt Hamilton - 28J</span>
+                                  <span class="mdc-list-item__secondary-text">Php 42,0000</span>
+                                  <span id="meta-mobile" class="mdc-list-item__meta">March 26</span>
+                                </span>
+                                  <span class="mdc-list-item__meta">March 26</span>
+                              </li>
+
+                  </li>
+                </ul>
+            </div>  
+          </div>
+        
+              
+              </section>
+              
+              <section id="listing-content" class="tab-content">
+                
+                 <!-- Place this tag where you want the Awesome Table Widget to render -->
+                <div data-type="AwesomeTableView" data-viewID="-LLD1dgOXU8YdFoS1qxE"></div>
+               
+              </section>
+
+        </div>
+      </main>
+    </div>
+    
+    <!-- import the Material javascript file -->
+  <script src="bundle-home.js" async></script>
+</body>
+</html>

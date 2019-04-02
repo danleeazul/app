@@ -1,0 +1,16 @@
+{
+    "host": "www.everbright.com.ph",
+    "username": "megawor3",
+    "password": "Dr8amb15!",
+    "remotePath": "/public_html/app",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": false,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

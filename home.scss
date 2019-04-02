@@ -1,0 +1,184 @@
+@import "./common";
+
+.home {
+  display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+}
+
+// Define theme variables before importing any MDC Web component styles
+$mdc-theme-primary: rgba(0, 0, 0, 0.87);
+
+// Import the styles for each MDC Web component
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/typography/mdc-typography";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+@import "@material/card/mdc-card";
+
+
+.my-card-content {
+  padding: 16px;
+}
+
+.mdccard{
+ padding-top: 16px;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color-accessible(white);
+  @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.6));
+  position: absolute;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+  margin: 20px 30px;
+}
+
+// BREAKPOINT min-width:900px
+@media (max-width: 700px) {
+  
+}
+
+.mdc-top-app-bar__navigation-icon {
+  display: none;
+}
+
+#meta-mobile{
+  display: none;
+}
+
+
+// BREAKPOINT max-width:900px
+
+@media (max-width: 900px) {
+  .mdc-top-app-bar__navigation-icon {
+    display: block;
+  }
+
+  .mdc-list-item__meta{
+    display: none;
+  }
+
+  #meta-mobile{
+    display: block;
+  }
+
+
+
+
+}
+
+
+//TAB BAR
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color-accessible(white);
+
+  top: 0;
+  left: 0;
+}
+
+#listing-content, #logout-content{
+  display: none;
+}
+
+.dashboard-tab{
+  display: none;
+}
+
+// Fill the height of the top app bar with the tab bar
+
+.mdc-top-app-bar__section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mdc-tab-bar, .mdc-tab-scroller, .mdc-tab-scroller__scroll-area, .mdc-tab {
+  height: 100%;
+}
+
+.mdc-list-item__meta {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.mdc-list-item__text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mdc-list-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  height: 48px;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.mdc-list--avatar-list .mdc-list-item__graphic {
+  margin-left: 0;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  border-radius: 50%;
+}
+
+img {
+  border-style: none;
+}
+
+.mdc-list-item__graphic {
+  margin-left: 0;
+  margin-right: 32px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.mdc-top-app-bar{
+  background-color: #039be5;
+}
+
+.mdc-top-app-bar__title, .mdc-top-app-bar__navigation-icon{
+  color: white;
+}
+
+#dashboard-tab, #listing-tab, #logout-tab{
+  display: none;
+}
+
+#menuicon{
+  color: white;
+}
+

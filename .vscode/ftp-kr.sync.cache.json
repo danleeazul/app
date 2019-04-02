@@ -1,0 +1,140 @@
+{
+  "ftp://www.everbright.com.ph@megawor3": {
+    ".bash_logout": {
+      "type": "-",
+      "size": 18,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".bash_profile": {
+      "type": "-",
+      "size": 191,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".bashrc": {
+      "type": "-",
+      "size": 175,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".contactemail": {
+      "type": "-",
+      "size": 23,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".cpanel": {},
+    ".cpanel-datastore": {},
+    ".cphorde": {},
+    ".dns": {
+      "type": "-",
+      "size": 23,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".ecp_conf": {},
+    ".emacs": {
+      "type": "-",
+      "size": 500,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".ftpquota": {
+      "type": "-",
+      "size": 19,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".gemrc": {
+      "type": "-",
+      "size": 141,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".htaccess": {
+      "type": "-",
+      "size": 38,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".htpasswds": {},
+    ".kshrc": {
+      "type": "-",
+      "size": 171,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".lastlogin": {
+      "type": "-",
+      "size": 650,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".spamassassinenable": {
+      "type": "-",
+      "size": 0,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".spamboxenable": {
+      "type": "-",
+      "size": 0,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".sqmailattach": {},
+    ".sqmaildata": {},
+    ".subaccounts": {},
+    ".trash": {},
+    ".zshrc": {
+      "type": "-",
+      "size": 658,
+      "lmtime": 0,
+      "modified": false
+    },
+    "access-logs": {
+      "type": "l",
+      "size": 34,
+      "lmtime": 0,
+      "modified": false
+    },
+    "access_logs": {
+      "type": "l",
+      "size": 34,
+      "lmtime": 0,
+      "modified": false
+    },
+    "backupwordpress": {},
+    "cache": {},
+    "cache_temp": {},
+    "error_log": {
+      "type": "-",
+      "size": 20618,
+      "lmtime": 0,
+      "modified": false
+    },
+    "etc": {},
+    "everbright.com.ph": {},
+    "logs": {},
+    "mail": {},
+    "perl5": {},
+    "public_ftp": {},
+    "public_html": {},
+    "ssl": {},
+    "tmp": {},
+    "webalizer.conf": {
+      "type": "-",
+      "size": 24106,
+      "lmtime": 0,
+      "modified": false
+    },
+    "www": {
+      "type": "l",
+      "size": 11,
+      "lmtime": 0,
+      "modified": false
+    }
+  },
+  "$version": 1
+}

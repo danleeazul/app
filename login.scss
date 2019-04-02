@@ -1,0 +1,47 @@
+@import "./common";
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+@import "@material/notched-outline/mdc-notched-outline";
+
+@import "@material/notched-outline/mixins";
+@import "@material/notched-outline/variables";
+@import "@material/shape/mixins";
+@import "@material/shape/functions";
+
+.radiusshape {
+  @include mdc-text-field-outline-shape-radius(6px);
+}
+
+.header {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.shrine-logo {
+  width: 150px;
+  height: 150px;
+  padding-top: 80px;
+  fill: currentColor;
+}
+
+.username,
+.password {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  display: flex;
+  //justify-content: flex-end;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin: auto;
+}
+
+.button-container button {
+  margin: 3px;
+}
+
+

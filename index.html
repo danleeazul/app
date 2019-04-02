@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Everbright</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/websitelogo2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="bundle-login.css">
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+
+</head>
+<body class="shrine-login">
+ 
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBuE7asowAqSz4Tgfzfn-ymMZCqALl8XXc",
+        authDomain: "fir-web-login-944b2.firebaseapp.com",
+        databaseURL: "https://fir-web-login-944b2.firebaseio.com",
+        projectId: "fir-web-login-944b2",
+        storageBucket: "fir-web-login-944b2.appspot.com",
+        messagingSenderId: "488295809809"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+    
+
+  <form action="home.html">
+      <section class="header">
+        <h2>Please Sign up</h2>
+      </section>
+
+      <div class="mdc-text-field text-field mdc-text-field--outlined username radiusshape mdc-text-field--dense">
+          <input type="email" id="email_field" class="mdc-text-field__input">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+            <div class="mdc-notched-outline__leading"></div>
+              <div class="mdc-notched-outline__notch">
+                <label for="text-field-outlined" class="mdc-floating-label">Email</label>
+              </div>
+            <div class="mdc-notched-outline__trailing"></div>
+        </div>
+      </div>
+
+
+      <div class="mdc-text-field text-field mdc-text-field--outlined password radiusshape mdc-text-field--dense">
+          <input type="password" id="password_field" class="mdc-text-field__input" required minlength="8">
+          <div class="mdc-notched-outline mdc-notched-outline--upgraded ">
+            <div class="mdc-notched-outline__leading"></div>
+            <div class="mdc-notched-outline__notch">
+              <label for="text-field-outlined" class="mdc-floating-label">Password</label>
+            </div>
+            <div class="mdc-notched-outline__trailing"></div>
+          </div>
+      </div>
+
+
+        <!-- <div class="mdc-text-field password">
+          <input type="password" class="mdc-text-field__input" id="password-input" name="password" required minlength="8">
+          <label class="mdc-floating-label" for="password-input">Password</label>
+          <div class="mdc-line-ripple"></div>
+        </div> -->
+
+        <div class="button-container">
+            <button class="mdc-button mdc-button--raised signin" type="button" id="btnlogin">
+              <span class="mdc-button__label">
+                Sign in
+              </span>
+            </button>
+          </div>
+
+        
+  </form>
+
+  <script src="bundle-login.js" async></script>
+</body>
+</html>
